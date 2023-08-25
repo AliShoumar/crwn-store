@@ -2,6 +2,7 @@ import './App.css';
 import {Route, Routes} from 'react-router-dom';
 import HomePage from './page/homepage/homepage.component';
 import ShopPage from './page/shop/shop.component';
+import Header from './components/header/header.component';
 
 const HatPage = () => {
 	return 'This is hat page';
@@ -10,6 +11,7 @@ const HatPage = () => {
 function App() {
 	return (
 		<div className='App'>
+			<Header />
 			<Routes>
 				<Route path='/'>
 					<Route index element={<HomePage />} />
